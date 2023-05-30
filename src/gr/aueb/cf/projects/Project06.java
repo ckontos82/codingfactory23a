@@ -7,12 +7,6 @@ package gr.aueb.cf.projects;
  */
 public class Project06 {
     static int globalMax = Integer.MIN_VALUE;
-
-    /**
-     * The main method from where the execution of the program starts.
-     *
-     * @param args The command line arguments passed to the main method.
-     */
     public static void main(String[] args) {
         int[] initialArray = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         maxSumSubarray(initialArray, initialArray.length - 1);
