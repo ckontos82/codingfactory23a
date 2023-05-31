@@ -192,9 +192,7 @@ public class Project10 {
             return false;
         }
 
-        if (row > 30 || row < 1) return false;
-
-        return true;
+        return row <= 30 && row >= 1;
     }
 
     /**
