@@ -54,10 +54,10 @@ public class Project06 {
         int maximum = Integer.MIN_VALUE;
         if (array == null || array.length < 1) return -1;
 
-        int localMax = 0;
+        int localMax = array[0];
 
-        for (int element : array) {
-            localMax = max(localMax + element, element);
+        for (int i = 1; i < array.length; i++) {
+            localMax = max(localMax + array[i], array[i]);
             maximum = max(localMax, maximum);
         }
 
